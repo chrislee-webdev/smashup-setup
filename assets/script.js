@@ -27,15 +27,32 @@ const sheep = [
     'Sheep'
 ]
 
+const allStars = [
+    'All Stars'
+]
+
 const gameContents = [
     coreSet,
     awesomeLevel,
     cthulu
   ];
 
-function getRandomSet(gameContents) {
-    return gameContents[Math.floor(Math.random() * gameContents.length)];
-}
+// this gets only one random element from the array 
+// function getRandomSet(gameContents) {
+//     return gameContents[Math.floor(Math.random() * gameContents.length)];
+// }
 
-console.log(getRandomSet(gameContents));
+const chooseRandom = (gameContents, num = 1) => {
+    const res = [];
+    for(let i = 0; i < num; ){
+       const random = Math.floor(Math.random() * gameContents.length);
+       if(res.indexOf(gameContents[random]) !== -1){
+          continue;
+       };
+       res.push(gameContents[random]);
+       i++;
+    };
+    return res;
+ };
+ console.log(chooseRandom(gameContents, 4));
 
