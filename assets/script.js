@@ -1,3 +1,4 @@
+// SmashUp Sets
 const coreSet = [
     'Aliens',
     'Dinosaurs',
@@ -23,36 +24,45 @@ const cthulu = [
     'Miskatonic University'
 ]
 
-const sheep = [
-    'Sheep'
-]
-
-const allStars = [
+const misc = [
+    'Sheep',
     'All Stars'
 ]
 
-const gameContents = [
-    coreSet,
-    awesomeLevel,
-    cthulu
-  ];
 
-// this gets only one random element from the array 
-// function getRandomSet(gameContents) {
-//     return gameContents[Math.floor(Math.random() * gameContents.length)];
-// }
 
-const chooseRandom = (gameContents, num = 1) => {
-    const res = [];
-    for(let i = 0; i < num; ){
-       const random = Math.floor(Math.random() * gameContents.length);
-       if(res.indexOf(gameContents[random]) !== -1){
-          continue;
-       };
-       res.push(gameContents[random]);
-       i++;
-    };
-    return res;
- };
- console.log(chooseRandom(gameContents, 4));
+//Selected sets are placed in an array
+function selectedSets() {
+    let arr = [];
+    let checkboxes = document.querySelectorAll("input[type='checkbox']:checked");
+    for (let i = 0 ; i < checkboxes.length; i++) {
+    arr.push(checkboxes[i].value)
+    }
 
+    let newArr = arr.flatMap(set => set)
+
+    console.log(arr[0]);
+}
+
+// store selected sets 
+// const gameContents = [
+//     coreSet,
+//     awesomeLevel,
+//     cthulu,
+//     misc
+//   ];
+
+// const chooseRandom = (gameContents, num = 1) => {
+//     const results = [];
+//     for(let i = 0; i < num; ){
+//        const random = Math.floor(Math.random() * gameContents.length);
+//        if(results.indexOf(gameContents[random]) !== -1){
+//           continue;
+//        };
+//        results.push(gameContents[random]);
+//        i++;
+//     };
+//     return results;
+//  };
+ 
+// console.log(chooseRandom(gameContents, 2))
