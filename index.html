@@ -12,6 +12,15 @@
     </header>
 
     <main>
+
+        <label>Choose number of players:</label>
+        <select id="players" onchange="getPlayers()">
+            <option value=""></option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
         <h2>Core Set</h2>
         <input type="checkbox" class="sets" id="coreSet" value="coreSet">
 
@@ -21,10 +30,13 @@
         <h2>The Obligatory Cthulu Set</h2>
         <input type="checkbox" class="sets" id="cthulu" value="cthulu">
 
-        <h2>Misc</h2>
-        <input type="checkbox" class="sets" id="misc" value="misc"> </main><br>
+        <h2>Sheep</h2>
+        <input type="checkbox" class="sets" id="sheep" value="sheep"> </main>
 
-        <button class="submit" onclick="selectedSets()">Submit</button>
+        <h2>All Stars</h2>
+        <input type="checkbox" class="sets" id="allStars" value="allStars"> </main><br>
+
+        <button class="submit" onclick="ifSelected()">Submit</button>
     </main>
 
     <script src="./assets/script.js"></script>
