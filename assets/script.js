@@ -100,6 +100,13 @@ function getPlayers() {
 function ifSelected() {
     let coreSetCheckBox = document.getElementById("coreSet");
     let awesomeLevelCheckBox = document.getElementById("awesomeLevel9000");
+    let sciFiCheckBox = document.getElementById("sciFi");
+    let monsterSmashCheckBox = document.getElementById("monsterSmash");
+    let prettyCheckBox = document.getElementById("pretty");
+    let yourFaultCheckBox = document.getElementById("yourFault");
+    let ceaseDesistCheckBox = document.getElementById("ceaseDesist");
+    let thinkingCheckBox = document.getElementById("thinking");
+    let japanCheckBox = document.getElementById("japan");
     let cthuluCheckBox = document.getElementById("cthulu");
     let sheepCheckBox = document.getElementById("sheep");
     let allStarsCheckBox = document.getElementById("allStars");
@@ -113,6 +120,27 @@ function ifSelected() {
     };
     if (cthuluCheckBox.checked) {
         expansions.push(cthulu)
+    };
+    if (sciFiCheckBox.checked) {
+        expansions.push(sciFi)
+    };
+    if (monsterSmashCheckBox.checked) {
+        expansions.push(monsterSmash)
+    };
+    if (prettyCheckBox.checked) {
+        expansions.push(pretty)
+    };
+    if (yourFaultCheckBox.checked) {
+        expansions.push(yourFault)
+    };
+    if (ceaseDesistCheckBox.checked) {
+        expansions.push(ceaseDesist)
+    };
+    if (thinkingCheckBox.checked) {
+        expansions.push(thinking)
+    };
+    if (japanCheckBox.checked) {
+        expansions.push(japan)
     };
     if (sheepCheckBox.checked) {
         expansions.push(sheep)
