@@ -1,3 +1,35 @@
+let coreSetCheckBox = document.getElementById("coreSet");
+let awesomeLevelCheckBox = document.getElementById("awesomeLevel9000");
+let sciFiCheckBox = document.getElementById("sciFi");
+let monsterSmashCheckBox = document.getElementById("monsterSmash");
+let prettyCheckBox = document.getElementById("pretty");
+let yourFaultCheckBox = document.getElementById("yourFault");
+let ceaseDesistCheckBox = document.getElementById("ceaseDesist");
+let thinkingCheckBox = document.getElementById("thinking");
+let japanCheckBox = document.getElementById("japan");
+let cthuluCheckBox = document.getElementById("cthulu");
+let sheepCheckBox = document.getElementById("sheep");
+let allStarsCheckBox = document.getElementById("allStars");
+let selected = document.getElementsByClassName('sets');
+
+// Select all expansions
+function selectAll() {
+    for (let i = 0; i < selected.length; i++) {
+        if (selected[i].type == 'checkbox') {
+            selected[i].checked = true;
+        }
+    }
+}
+
+// Unselect all expansions
+function unSelectAll() {
+    for (let i = 0; i < selected.length; i++) {
+        if (selected[i].type == 'checkbox') {
+            selected[i].checked = false;
+        }
+    }
+}
+
 // SmashUp Sets
 const coreSet = [
     'Aliens',
@@ -86,31 +118,17 @@ const allStars = [
 let expansions = []
 
 // Get number of players and player arrays
-let player1 = [];
-let player2 = [];
-let player3 = [];
-let player4 = [];
-
 let n 
 function getPlayers() {
     n = document.getElementById('players').value;
 }
 
+let player1 = [];
+let player2 = [];
+let player3 = [];
+let player4 = [];
 
 function ifSelected() {
-    let coreSetCheckBox = document.getElementById("coreSet");
-    let awesomeLevelCheckBox = document.getElementById("awesomeLevel9000");
-    let sciFiCheckBox = document.getElementById("sciFi");
-    let monsterSmashCheckBox = document.getElementById("monsterSmash");
-    let prettyCheckBox = document.getElementById("pretty");
-    let yourFaultCheckBox = document.getElementById("yourFault");
-    let ceaseDesistCheckBox = document.getElementById("ceaseDesist");
-    let thinkingCheckBox = document.getElementById("thinking");
-    let japanCheckBox = document.getElementById("japan");
-    let cthuluCheckBox = document.getElementById("cthulu");
-    let sheepCheckBox = document.getElementById("sheep");
-    let allStarsCheckBox = document.getElementById("allStars");
-
     // Check to see if expansion has been checked. If so, add expansion to expansions array
     if (coreSetCheckBox.checked) {
         expansions.push(coreSet)
@@ -151,39 +169,53 @@ function ifSelected() {
 
     // merge all elements in array in to one array
     let flattened = expansions.flatMap(factions => factions);
-    console.log(flattened);
-
+  
     // shuffle flattened array and choose n * 2 elements from the shuffledArray
     let shuffledArray = flattened.sort(() => 0.5 - Math.random())
+    console.log(shuffledArray);
     let results = shuffledArray.slice(0, n * 2);
 
-    console.log(results)
     console.log(n + " players are playing")
 
     // factions get distributed to player
    if (n == 2) {
+
     player1.push(results[0])
-    player1.push(results[1])
-    player2.push(results[2])
+    player1.push(results[2])
+    player2.push(results[1])
     player2.push(results[3])
+
+    console.log('Player 1 get ' + results[0] + ' and ' + results[2])
+    console.log('Player 2 get ' + results[1] + ' and ' + results[3])
+
+   } else if (n == 3) {
+
+    player1.push(results[0])
+    player1.push(results[3])
+    player2.push(results[1])
+    player2.push(results[4])
+    player3.push(results[2])
+    player3.push(results[5])
+
+    console.log('Player 1 get ' + results[0] + ' and ' + results[3])
+    console.log('Player 2 get ' + results[1] + ' and ' + results[4])
+    console.log('Player 3 get ' + results[2] + ' and ' + results[5])
+
+   } else if (n == 4 ) {
+
+    player1.push(results[0])
+    player1.push(results[4])
+    player2.push(results[1])
+    player2.push(results[5])
+    player3.push(results[2])
+    player3.push(results[6])
+    player4.push(results[3])
+    player4.push(results[7])
+
+    console.log('Player 1 get ' + results[0] + ' and ' + results[4])
+    console.log('Player 2 get ' + results[1] + ' and ' + results[5])
+    console.log('Player 3 get ' + results[2] + ' and ' + results[6])
+    console.log('Player 4 get ' + results[3] + ' and ' + results[7])
+
    }
-
-   console.log('Player 1 gets ' + results[0] + ' and ' + results[1])
-   console.log('Player 2 gets ' + results[2] + ' and ' + results[3])
 } 
-
-
-// const chooseRandom = (gameContents, num = 1) => {
-//     const results = [];
-//     for(let i = 0; i < num; ){
-//        const random = Math.floor(Math.random() * gameContents.length);
-//        if(results.indexOf(gameContents[random]) !== -1){
-//           continue;
-//        };
-//        results.push(gameContents[random]);
-//        i++;
-//     };
-//     return results;
-//  };
- 
-// console.log(chooseRandom(gameContents, 2))

@@ -13,7 +13,7 @@
 
     <main>
 
-        <label>Choose number of players:</label>
+        <h2><label>Choose number of players:</label></h2>
         <select id="players" onchange="getPlayers()">
             <option value=""></option>
             <option value="2">2</option>
@@ -22,19 +22,19 @@
         </select>
 
         <h2>Core Set</h2>
-        <input type="checkbox" class="sets" id="coreSet">
+        <input type="checkbox" class="sets" id="coreSet" name="acs">
 
         <h2>Awesome Level 9000</h2>
-        <input type="checkbox" class="sets" id="awesomeLevel9000">
+        <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
 
         <h2>The Obligatory Cthulu Set</h2>
-        <input type="checkbox" class="sets" id="cthulu">
+        <input type="checkbox" class="sets" id="cthulu" name="acs">
 
         <h2>Science Fiction Double Feature</h2>
-        <input type="checkbox" class="sets" id="sciFi">
+        <input type="checkbox" class="sets" id="sciFi" name="acs">
 
         <h2>Monster Smash</h2>
-        <input type="checkbox" class="sets" id="monsterSmash">
+        <input type="checkbox" class="sets" id="monsterSmash" name="acs">
 
         <h2>Pretty Pretty Smash Up</h2>
         <input type="checkbox" class="sets" id="pretty">
@@ -58,6 +58,8 @@
         <input type="checkbox" class="sets" id="allStars">
 
         <button class="submit" onclick="ifSelected()">Submit</button>
+        <button class="submit" onclick="selectAll()">Select All Sets</button>
+        <button class="submit" onclick="unSelectAll()">Deselect All Sets</button>
     </main>
 
     <script src="./assets/script.js"></script>
