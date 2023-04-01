@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>SmashUp SetUp</title>
 </head>
 <body>
@@ -13,53 +14,59 @@
 
     <main>
 
-        <h2><label>Choose number of players:</label></h2>
-        <select id="players" onchange="getPlayers()">
-            <option value=""></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
+        <div class="playerSelect">
+            <label>Choose number of players:</label>
+            <select id="players" onchange="getPlayers()">
+                <option value="0"></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
 
-        <h2>Core Set</h2>
-        <input type="checkbox" class="sets" id="coreSet" name="acs">
+        <div class="chooseSets">
+            <h2 class>Core Set</h2>
+            <input type="checkbox" class="sets" id="coreSet" name="acs">
 
-        <h2>Awesome Level 9000</h2>
-        <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
+            <h2>Awesome Level 9000</h2>
+            <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
 
-        <h2>The Obligatory Cthulu Set</h2>
-        <input type="checkbox" class="sets" id="cthulu" name="acs">
+            <h2>The Obligatory Cthulu Set</h2>
+            <input type="checkbox" class="sets" id="cthulu" name="acs">
 
-        <h2>Science Fiction Double Feature</h2>
-        <input type="checkbox" class="sets" id="sciFi" name="acs">
+            <h2>Science Fiction Double Feature</h2>
+            <input type="checkbox" class="sets" id="sciFi" name="acs">
 
-        <h2>Monster Smash</h2>
-        <input type="checkbox" class="sets" id="monsterSmash" name="acs">
+            <h2>Monster Smash</h2>
+            <input type="checkbox" class="sets" id="monsterSmash" name="acs">
 
-        <h2>Pretty Pretty Smash Up</h2>
-        <input type="checkbox" class="sets" id="pretty">
+            <h2>Pretty Pretty Smash Up</h2>
+            <input type="checkbox" class="sets" id="pretty">
 
-        <h2>It's Your Fault</h2>
-        <input type="checkbox" class="sets" id="yourFault">
+            <h2>It's Your Fault</h2>
+            <input type="checkbox" class="sets" id="yourFault">
 
-        <h2>Cease and Desist</h2>
-        <input type="checkbox" class="sets" id="ceaseDesist">
+            <h2>Cease and Desist</h2>
+            <input type="checkbox" class="sets" id="ceaseDesist">
 
-        <h2>What Were We Thinking</h2>
-        <input type="checkbox" class="sets" id="thinking">
+            <h2>What Were We Thinking</h2>
+            <input type="checkbox" class="sets" id="thinking">
 
-        <h2>Big in Japan</h2>
-        <input type="checkbox" class="sets" id="japan">
+            <h2>Big in Japan</h2>
+            <input type="checkbox" class="sets" id="japan">
 
-        <h2>Sheep</h2>
-        <input type="checkbox" class="sets" id="sheep">
+            <h2>Sheep</h2>
+            <input type="checkbox" class="sets" id="sheep">
 
-        <h2>All Stars</h2>
-        <input type="checkbox" class="sets" id="allStars">
+            <h2>All Stars</h2>
+            <input type="checkbox" class="sets" id="allStars">
+        </div>
 
-        <button class="submit" onclick="ifSelected()">Submit</button>
-        <button class="submit" onclick="selectAll()">Select All Sets</button>
-        <button class="submit" onclick="unSelectAll()">Deselect All Sets</button>
+        <div class="buttons">
+            <button class="submit" id="selectAll" onclick="selectAll()">Select All Sets</button>
+            <button class="submit" id="unselectAll" onclick="unSelectAll()">Deselect All Sets</button>
+            <button class="submit" id="submit" onclick="ifSelected()">Submit</button>
+        </div>
     </main>
 
     <script src="./assets/script.js"></script>
