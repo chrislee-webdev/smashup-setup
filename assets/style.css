@@ -9,7 +9,11 @@ body {
 }
 
 header {
-    margin-top: 25px;
+    padding-top: 25px;
+    width: 50%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main,
@@ -21,5 +25,20 @@ header,
 .playerSelect,
 .sets,
 .buttons {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.chooseSets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setCard {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 50%;
+
 }
