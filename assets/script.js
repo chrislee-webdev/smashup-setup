@@ -178,18 +178,33 @@ function ifSelected() {
     console.log(n + " players are playing")
 
     // factions get distributed to player
-   if (n == 2) {
 
+    function twoPlayerGame() {
+        document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[2]}</h2>`;
+
+        document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[3]}</h2>`
+    }
+
+    function threePlayerGame() {
+       
+    }
+
+    function fourPlayerGame() {
+       
+    }
+   
+   if (n == 2) {
+     // 2 player game
     player1.push(results[0])
     player1.push(results[2])
     player2.push(results[1])
     player2.push(results[3])
 
-    console.log('Player 1 get ' + results[0] + ' and ' + results[2])
-    console.log('Player 2 get ' + results[1] + ' and ' + results[3])
+    console.log('Player 1 gets ' + results[0] + ' and ' + results[2])
+    console.log('Player 2 gets ' + results[1] + ' and ' + results[3])
 
    } else if (n == 3) {
-
+    //3 player game
     player1.push(results[0])
     player1.push(results[3])
     player2.push(results[1])
@@ -197,12 +212,11 @@ function ifSelected() {
     player3.push(results[2])
     player3.push(results[5])
 
-    console.log('Player 1 get ' + results[0] + ' and ' + results[3])
-    console.log('Player 2 get ' + results[1] + ' and ' + results[4])
-    console.log('Player 3 get ' + results[2] + ' and ' + results[5])
-
+    console.log('Player 1 gets ' + results[0] + ' and ' + results[3])
+    console.log('Player 2 gets ' + results[1] + ' and ' + results[4])
+    console.log('Player 3 gets ' + results[2] + ' and ' + results[5])
    } else if (n == 4 ) {
-
+    // 4 player game
     player1.push(results[0])
     player1.push(results[4])
     player2.push(results[1])
@@ -212,10 +226,9 @@ function ifSelected() {
     player4.push(results[3])
     player4.push(results[7])
 
-    console.log('Player 1 get ' + results[0] + ' and ' + results[4])
-    console.log('Player 2 get ' + results[1] + ' and ' + results[5])
-    console.log('Player 3 get ' + results[2] + ' and ' + results[6])
-    console.log('Player 4 get ' + results[3] + ' and ' + results[7])
-
+    console.log('Player 1 gets ' + results[0] + ' and ' + results[4])
+    console.log('Player 2 gets ' + results[1] + ' and ' + results[5])
+    console.log('Player 3 gets ' + results[2] + ' and ' + results[6])
+    console.log('Player 4 gets ' + results[3] + ' and ' + results[7])
    }
 } 
