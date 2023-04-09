@@ -19,7 +19,7 @@ function selectAll() {
             selected[i].checked = true;
         }
     }
-}
+};
 
 // Unselect all expansions
 function unSelectAll() {
@@ -28,7 +28,7 @@ function unSelectAll() {
             selected[i].checked = false;
         }
     }
-}
+};
 
 // SmashUp Sets
 const coreSet = [
@@ -54,21 +54,21 @@ const cthulu = [
     'Innsmouth',
     'Minions of Cthulu',
     'Miskatonic University'
-]
+];
 
 const sciFi = [
     'Cyborg Apes',
     'Shapeshifters',
     'Super Spies',
     'Time Travelers'
-]
+];
 
 const monsterSmash = [
     'Giant Ants',
     'Mad Scientists',
     'Vampires',
     'Werewolves'
-]
+];
 
 const pretty = [
     'Fairies',
@@ -83,45 +83,45 @@ const yourFault = [
     'Sharks',
     'Superheroes',
     'Tornados'
-]
+];
 
 const ceaseDesist = [
     'Astroknights',
     'Changerbots',
     'Ignobles',
     'Star Roamers'
-]
+];
 
 const thinking = [
     'Explorers',
     'Grannies',
     'Rock Stars',
     'Teddy Bears'
-]
+];
 
 const japan = [
     'Itty Critters',
     'Kaiju',
     'Magical Girls',
     'Mega Troopers'
-]
+];
 
 const sheep = [
     'Sheep'
-]
+];
 
 const allStars = [
     'All Stars'
-]
+];
 
 // Empty arrays
-let expansions = []
+let expansions = [];
 
 // Get number of players and player arrays
 let n 
 function getPlayers() {
     n = document.getElementById('players').value;
-}
+};
 
 let player1 = [];
 let player2 = [];
@@ -186,12 +186,22 @@ function ifSelected() {
     }
 
     function threePlayerGame() {
-       
-    }
+       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[3]}`;
+
+       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[4]}`;
+
+       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[5]}`;
+    };
 
     function fourPlayerGame() {
-       
-    }
+       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[4]}`;
+
+       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[5]}`;
+
+       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[6]}`;
+
+       document.getElementById('playerFourFactions').innerHTML = `<h2>Player 4 gets ${results[3]} and ${results[7]}`;
+    };
    
    if (n == 2) {
      // 2 player game
@@ -200,8 +210,7 @@ function ifSelected() {
     player2.push(results[1])
     player2.push(results[3])
 
-    console.log('Player 1 gets ' + results[0] + ' and ' + results[2])
-    console.log('Player 2 gets ' + results[1] + ' and ' + results[3])
+    twoPlayerGame();
 
    } else if (n == 3) {
     //3 player game
@@ -212,9 +221,8 @@ function ifSelected() {
     player3.push(results[2])
     player3.push(results[5])
 
-    console.log('Player 1 gets ' + results[0] + ' and ' + results[3])
-    console.log('Player 2 gets ' + results[1] + ' and ' + results[4])
-    console.log('Player 3 gets ' + results[2] + ' and ' + results[5])
+    threePlayerGame();
+
    } else if (n == 4 ) {
     // 4 player game
     player1.push(results[0])
@@ -226,9 +234,6 @@ function ifSelected() {
     player4.push(results[3])
     player4.push(results[7])
 
-    console.log('Player 1 gets ' + results[0] + ' and ' + results[4])
-    console.log('Player 2 gets ' + results[1] + ' and ' + results[5])
-    console.log('Player 3 gets ' + results[2] + ' and ' + results[6])
-    console.log('Player 4 gets ' + results[3] + ' and ' + results[7])
+    fourPlayerGame();
    }
 } 
