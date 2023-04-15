@@ -11,6 +11,7 @@ let cthuluCheckBox = document.getElementById("cthulu");
 let sheepCheckBox = document.getElementById("sheep");
 let allStarsCheckBox = document.getElementById("allStars");
 let selected = document.getElementsByClassName('sets');
+let finalSetup = document.getElementById("finalSetup")
 
 // Select all expansions
 function selectAll() {
@@ -186,19 +187,19 @@ function ifSelected() {
     }
 
     function threePlayerGame() {
-       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[3]}`;
+       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[3]}</h2>`;
 
-       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[4]}`;
+       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[4]}</h2>`;
 
-       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[5]}`;
+       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[5]}</h2>`;
     };
 
     function fourPlayerGame() {
-       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[4]}`;
+       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 gets ${results[0]} and ${results[4]}</h2>`;
 
-       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[5]}`;
+       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[5]}</h2>`;
 
-       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[6]}`;
+       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[6]}<h2>`;
 
        document.getElementById('playerFourFactions').innerHTML = `<h2>Player 4 gets ${results[3]} and ${results[7]}`;
     };
