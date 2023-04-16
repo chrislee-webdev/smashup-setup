@@ -31,6 +31,9 @@ function unSelectAll() {
     }
 };
 
+// Reset all selections
+
+
 // SmashUp Sets
 const coreSet = [
     'Aliens',
