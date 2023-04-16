@@ -111,8 +111,110 @@ const sheep = [
     'Sheep'
 ];
 
-const allStars = [
-    'All Stars'
+const bigInJapan = [
+    'Itty Critters',
+    'Kaiju',
+    'Magical Girls',
+    'Mega Troopers'
+];
+
+const thatSeventiesExpansion = [
+    'Disco Dancers',
+    'Kung Fu Fighters',
+    'Truckers',
+    'Vigilantes'
+];
+
+const theBiggerGeekierBox = [
+    'Geeks',
+    'Smash Up All Stars'
+];
+
+const oopsYouDidItAgain = [
+    'Ancient Egyptians',
+    'Cowboys',
+    'Samurai',
+    'Vikings'
+];
+
+const worldTour = [
+    'Luchadors',
+    'Mounties',
+    'Musketeers',
+    'Sumo Wrestlers'
+];
+
+const smashUpPenguins = [
+    'Penguins'
+];
+
+const worldTourCultureShock = [
+    'Anansi Takes',
+    'Ancient Incas',
+    "Grimm's Fairy Tales",
+    "Polynesian Voyagers",
+    "Russian Fairy Tales",
+];
+
+const smashUpMarvel = [
+    'Avengers',
+    'Hydra',
+    'Kree',
+    'Masters of Evil',
+    'S.H.I.E.L.D.',
+    'Sinister Six',
+    'Spider-Verse',
+    'Ultimates'
+];
+
+const smashUpGoblins = [
+    'Goblins'
+];
+
+const knightsOfTheRoundTable = [
+    'Knights of the Round Table'
+];
+
+const smashUpDisney = [
+    'Aladdin',
+    'Beauty and the Beast',
+    'Big Hero 6',
+    'Frozen',
+    'Mulan',
+    'The Lion King',
+    'The Nightmare Before Christmas',
+    'Wreck-It Ralph'
+];
+
+const tenthAnniversary = [
+    'Mermaids',
+    'Sheep',
+    'Skeletons',
+    'World Champs',
+    'Titans'
+];
+
+const theBigGeekyBox = [
+    'Geeks'
+];
+
+const munchkin = [
+    'Clerics',
+    'Dwarves',
+    'Elves',
+    'Halflings',
+    'Mages',
+    'Orcs',
+    'Thieves',
+    'Warriors'
+];
+
+const allStarsEventKit = [
+    'Smash Up All Stars'
+];
+
+const titansEventKit = [
+    'Titans'
 ];
 
 // Empty arrays
