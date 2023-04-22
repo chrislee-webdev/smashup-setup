@@ -220,6 +220,9 @@ const titansEventKit = [
     'Titans'
 ];
 
+const allStars = [
+    'All Stars'
+]
 // Empty arrays
 let expansions = [];
 
