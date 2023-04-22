@@ -16,16 +16,33 @@ header {
     background-size: cover;
 }
 
-main,
 header{
     text-align: center;
 }
 
 header,
-.playerSelect,
 .sets,
 .buttons {
     margin-bottom: 30px;
+}
+
+.playerSelect,
+.finalSetup,
+.buttons {
+    background-color: red;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+.playerSelect,
+.buttons,
+.players {
+    text-align: center;
+}
+
+.players {
+    margin-bottom: 15px;
 }
 
 .chooseSets {
@@ -39,6 +56,5 @@ header,
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    width: 50%;
-
+    width: 75%;
 }
