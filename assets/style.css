@@ -51,10 +51,6 @@ header,
     align-items: center;
 }
 
-/* .chooseSets :nth-child(even) {
-    background-color: bisque;
-} */
-
 .setCard {
     display: flex;
     align-items: baseline;
