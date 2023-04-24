@@ -12,8 +12,6 @@ header {
     padding-top: 25px;
     width: 50%;
     margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header{
@@ -31,7 +29,7 @@ header,
 .buttons {
     background-color: red;
     margin: auto;
-    width: 75%;
+    width: 50%;
     margin-bottom: 30px;
 }
 
@@ -53,9 +51,21 @@ header,
     align-items: center;
 }
 
+/* .chooseSets :nth-child(even) {
+    background-color: bisque;
+} */
+
 .setCard {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    width: 75%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+.setCard:hover {
+    background-color: white;
+    color: black;
 }
