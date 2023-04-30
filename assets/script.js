@@ -237,6 +237,11 @@ let player2 = [];
 let player3 = [];
 let player4 = [];
 
+// trying to change set background color change on click
+function click() {
+    
+}
+
 function ifSelected() {
     // Check to see if expansion has been checked. If so, add expansion to expansions array
     if (coreSetCheckBox.checked) {
