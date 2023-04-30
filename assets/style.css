@@ -24,10 +24,12 @@ header,
     margin-bottom: 30px;
 }
 
-.playerSelect,
-.finalSetup {
-    background-color: red;
+.playerSelect {
+    background-color: white;
+    color: black;
     margin: auto;
+    padding: 10px;
+    border-radius: 10px;
     width: 50%;
     margin-bottom: 30px;
 }
@@ -52,6 +54,7 @@ input[type=button] {
   padding: 8px 16px;
   text-decoration: none;
   margin: 4px 2px;
+  width: 100%;
 }
 
 .playerSelect,
@@ -87,8 +90,10 @@ input[type=button] {
     margin-bottom: 15px;
     background-color: aliceblue;
     color: black; */
-    width: 18rem;
+    margin: auto;
+    width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .setCard:hover {
