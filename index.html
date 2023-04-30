@@ -47,7 +47,7 @@
             <h2>Core Set</h2>
             <input type="checkbox" class="sets" id="coreSet" name="acs">
             </div>
-
+            
             <div class="setCard">
             <h2>Awesome Level 9000</h2>
             <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
@@ -57,7 +57,7 @@
             <h2>The Obligatory Cthulu Set</h2>
             <input type="checkbox" class="sets" id="cthulu" name="acs">
             </div>
-
+        
             <div class="setCard">
             <h2>Science Fiction Double Feature</h2>
             <input type="checkbox" class="sets" id="sciFi" name="acs">
@@ -105,11 +105,10 @@
         </div>
 
         <div class="buttons">
-            <button class="submit" id="selectAll" onclick="selectAll()">Select All Sets</button>
-            <button class="submit" id="unselectAll" onclick="unSelectAll()">Deselect All Sets</button>
-            <button class="submit" id="submit" onclick="ifSelected()">Submit</button>
-            <button class="submit" id="reset" onclick="window.location.reload()">Reset</button>
-        </div>
+            <input type="button" class="submit" id="selectAll" onclick="selectAll()" value="Select all sets">
+            <input type="button" class="submit" id="unselectAll" onclick="unSelectAll()" value="Unselect all sets">
+            <input type="button" class="submit" id="submit" onclick="ifSelected()" value="Start Game">
+            <input type="button"class="submit" id="reset" onclick="window.location.reload()" value="Reset">
     </main>
 
     <script src="./assets/script.js"></script>
