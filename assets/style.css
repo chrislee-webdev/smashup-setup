@@ -93,6 +93,10 @@ input[type=button] {
     margin: auto;
     width: 100%;
     margin-bottom: 30px;
+}
+
+.setCard,
+.playerSelect {
     border-radius: 10px;
     box-shadow: 10px 10px 5px lightgray;
 }
@@ -103,5 +107,8 @@ input[type=button] {
 }
 
 img {
-    padding: 25px 25px 0px 25px;
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 25px;
+    margin: auto;
 }
