@@ -15,6 +15,9 @@ let biggerGeekierCheckBox = document.getElementById("biggerGeekier");
 let oopsYouDidItAgainCheckBox = document.getElementById("oopsYouDidItAgain");
 let worldTourCheckBox = document.getElementById("worldTour");
 let penguinsCheckBox = document.getElementById("penguins");
+let marvelCheckBox = document.getElementById("marvel");
+let goblinsCheckBox = document.getElementById("goblins");
+let knightsOfTheRoundTableCheckBox = document.getElementById("knightsOfTheRoundTable")
 let selected = document.getElementsByClassName('sets');
 let finalSetup = document.getElementById("finalSetup");
 
@@ -164,7 +167,7 @@ const worldTourCultureShock = [
     "Russian Fairy Tales",
 ];
 
-const smashUpMarvel = [
+const marvel = [
     'Avengers',
     'Hydra',
     'Kree',
@@ -175,7 +178,7 @@ const smashUpMarvel = [
     'Ultimates'
 ];
 
-const smashUpGoblins = [
+const goblins = [
     'Goblins'
 ];
 
@@ -299,6 +302,15 @@ function ifSelected() {
     };
     if (penguinsCheckBox.checked) {
         expansions.push(penguins)
+    };
+    if (marvelCheckBox.checked) {
+        expansions.push(marvel)
+    };
+    if (goblinsCheckBox.checked) {
+        expansions.push(goblins)
+    };
+    if (knightsOfTheRoundTable.checked) {
+        expansions.push(knightsOfTheRoundTable)
     };
 
     // merge all elements in array in to one array
