@@ -24,13 +24,17 @@ header,
     margin-bottom: 30px;
 }
 
+h1 {
+    font-size: 6rem;
+}
+
 .playerSelect {
     background-color: white;
     color: black;
-    margin: auto;
     padding: 10px;
     border-radius: 10px;
-    width: 75%;
+    width: 60%;
+    margin: auto;
     margin-bottom: 30px;
 }
 
@@ -68,7 +72,7 @@ input[type=button] {
     margin-bottom: 15px;
 }
 
-.chooseSets {
+/* .chooseSets {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -76,7 +80,7 @@ input[type=button] {
     align-items: center;
     width: 75%;
     margin: auto;
-}
+} */
 
 .setCard {
     /* display: flex;
@@ -92,8 +96,10 @@ input[type=button] {
     color: black; */
     margin: auto;
     width: 100%;
-    margin-bottom: 30px;
     height: 34rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .setCard,

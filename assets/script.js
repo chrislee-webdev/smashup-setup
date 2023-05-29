@@ -10,8 +10,13 @@ let japanCheckBox = document.getElementById("japan");
 let cthuluCheckBox = document.getElementById("cthulu");
 let sheepCheckBox = document.getElementById("sheep");
 let allStarsCheckBox = document.getElementById("allStars");
+let that70sCheckBox = document.getElementById("that70s");
+let biggerGeekierCheckBox = document.getElementById("biggerGeekier");
+let oopsYouDidItAgainCheckBox = document.getElementById("oopsYouDidItAgain");
+let worldTourCheckBox = document.getElementById("worldTour");
+let penguinsCheckBox = document.getElementById("penguins");
 let selected = document.getElementsByClassName('sets');
-let finalSetup = document.getElementById("finalSetup")
+let finalSetup = document.getElementById("finalSetup");
 
 // Select all expansions
 function selectAll() {
@@ -121,7 +126,7 @@ const bigInJapan = [
     'Mega Troopers'
 ];
 
-const thatSeventiesExpansion = [
+const that70sExpansion = [
     'Disco Dancers',
     'Kung Fu Fighters',
     'Truckers',
@@ -147,7 +152,7 @@ const worldTour = [
     'Sumo Wrestlers'
 ];
 
-const smashUpPenguins = [
+const penguins = [
     'Penguins'
 ];
 
@@ -279,6 +284,21 @@ function ifSelected() {
     };
     if (allStarsCheckBox.checked) {
         expansions.push(allStars)
+    };
+    if (that70sCheckBox.checked) {
+        expansions.push(that70sExpansion)
+    };
+    if (biggerGeekierCheckBox.checked) {
+        expansions.push(theBiggerGeekierBox)
+    };
+    if (oopsYouDidItAgainCheckBox.checked) {
+        expansions.push(oopsYouDidItAgain)
+    };
+    if (worldTourCheckBox.checked) {
+        expansions.push(worldTour)
+    };
+    if (penguinsCheckBox.checked) {
+        expansions.push(penguins)
     };
 
     // merge all elements in array in to one array
