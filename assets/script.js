@@ -17,9 +17,8 @@ let worldTourCheckBox = document.getElementById("worldTour");
 let penguinsCheckBox = document.getElementById("penguins");
 let marvelCheckBox = document.getElementById("marvel");
 let goblinsCheckBox = document.getElementById("goblins");
-let knightsOfTheRoundTableCheckBox = document.getElementById("knightsOfTheRoundTable")
+let knightsOfTheRoundTableCheckBox = document.getElementById("knightsOfTheRoundTable");
 let selected = document.getElementsByClassName('sets');
-let finalSetup = document.getElementById("finalSetup");
 
 // Select all expansions
 function selectAll() {
@@ -38,9 +37,6 @@ function unSelectAll() {
         }
     }
 };
-
-// Reset all selections
-
 
 // SmashUp Sets
 const coreSet = [
@@ -245,11 +241,6 @@ let player2 = [];
 let player3 = [];
 let player4 = [];
 
-// trying to change set background color change on click
-function click() {
-    
-}
-
 function ifSelected() {
     // Check to see if expansion has been checked. If so, add expansion to expansions array
     if (coreSetCheckBox.checked) {
@@ -326,27 +317,27 @@ function ifSelected() {
     // factions get distributed to player
 
     function twoPlayerGame() {
-        document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 is blessed (or cursed) with ${results[0]} and ${results[2]}</h2>`;
+        document.getElementById('playerOneFactions').innerHTML = `<p>Player 1 is blessed (or cursed) with ${results[0]} and ${results[2]}</p>`;
 
-        document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 is going to lose with ${results[1]} and ${results[3]}</h2>`
+        document.getElementById('playerTwoFactions').innerHTML = `<p>Player 2 is going to lose with ${results[1]} and ${results[3]}</p>`
     }
 
     function threePlayerGame() {
-       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 is stuck with ${results[0]} and ${results[3]}</h2>`;
+       document.getElementById('playerOneFactions').innerHTML = `<p>Player 1 is stuck with ${results[0]} and ${results[3]}</p>`;
 
-       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 gets ${results[1]} and ${results[4]}! Good luck with that!</h2>`;
+       document.getElementById('playerTwoFactions').innerHTML = `<p>Player 2 gets ${results[1]} and ${results[4]}! Good luck with that!</p>`;
 
-       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 gets ${results[2]} and ${results[5]}. Oh god why?</h2>`;
+       document.getElementById('playerThreeFactions').innerHTML = `<p>Player 3 gets ${results[2]} and ${results[5]}. Oh god why?</p>`;
     };
 
     function fourPlayerGame() {
-       document.getElementById('playerOneFactions').innerHTML = `<h2>Player 1 is doomed with ${results[0]} and ${results[4]}</h2>`;
+       document.getElementById('playerOneFactions').innerHTML = `<p>Player 1 is doomed with ${results[0]} and ${results[4]}</p>`;
 
-       document.getElementById('playerTwoFactions').innerHTML = `<h2>Player 2 should just give up because they get ${results[1]} and ${results[5]}</h2>`;
+       document.getElementById('playerTwoFactions').innerHTML = `<p>Player 2 should just give up because they get ${results[1]} and ${results[5]}</p>`;
 
-       document.getElementById('playerThreeFactions').innerHTML = `<h2>Player 3 is crying in the corner with ${results[2]} and ${results[6]}<h2>`;
+       document.getElementById('playerThreeFactions').innerHTML = `<p>Player 3 is crying in the corner with ${results[2]} and ${results[6]}<p>`;
 
-       document.getElementById('playerFourFactions').innerHTML = `<h2>Player 4 is cursed with ${results[3]} and ${results[7]}`;
+       document.getElementById('playerFourFactions').innerHTML = `<p>Player 4 is cursed with ${results[3]} and ${results[7]}`;
     };
    
    if (n == 2) {
@@ -382,4 +373,13 @@ function ifSelected() {
 
     fourPlayerGame();
    }
+   
+   // Show players and their factions
+   let final = document.getElementById('final')
+
+   function finalSetUp() {
+    final.style.display = 'block';
+   }
+
+   finalSetUp()
 } 

@@ -6,6 +6,7 @@
 body {
     background-color: #60a5fa;
     color: aliceblue;
+
 }
 
 header {
@@ -22,10 +23,6 @@ header,
 .sets,
 .buttons {
     margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 6rem;
 }
 
 .playerSelect {
@@ -70,6 +67,7 @@ input[type=button] {
 .players {
     text-align: left;
     margin-bottom: 15px;
+    font-size: xx-small;
 }
 
 /* .chooseSets {
@@ -100,6 +98,22 @@ input[type=button] {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
+}
+
+.finalSetup {
+    display: none;
+    margin: auto;
+    background-color: white;
+    width: 75%;
+    color: black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightgray;
+}
+
+.players {
+    font-size: 15px;
 }
 
 .setCard,
