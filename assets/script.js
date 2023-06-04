@@ -35,7 +35,7 @@ function unSelectAll() {
         if (selected[i].type == 'checkbox') {
             selected[i].checked = false;
         }
-    }
+    }   
 };
 
 // SmashUp Sets
