@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>SmashUp SetUp</title>
 </head>
@@ -24,7 +25,7 @@
             </select>
         </div>
 
-        <div class="finalSetup">
+        <div class="finalSetup" id="final">
             <div id="playerOne" class="players">
                 <p id="playerOneFactions"></p>
             </div>
@@ -42,76 +43,241 @@
             </div>
         </div>
 
-        <div class="chooseSets">
-            <div class="setCard">
-            <h2>Core Set</h2>
-            <input type="checkbox" class="sets" id="coreSet" name="acs">
+        <div class="container">
+            <div class="row">
+                    <div class="setCard card col">
+                    <img src="/assets/images/Core_set_box.webp" alt="Box art for Smash Up Core Set">
+                    <div class="card-body">
+                        <h2>Core Set</h2>
+                        <p>Factions:</p>
+                        <p>Aliens, Dinosaurs, Ninjas, Pirates, Robots, Tricksters, Wizards and Zombies</p>
+                    </div>
+                    <input type="checkbox" class="sets" id="coreSet" name="acs">
+                    </div>
+            
+                    <div class="setCard card col">
+                        <img src="assets/images/awesomeLevel3000.webp" alt="Box art for Awesome Level 9000 expansion">
+                        <div class="card-body">
+                            <h2>Awsome Level 9000</h2>
+                            <p>Factions:</p>
+                            <p>Bear Calvary, Ghosts, Killer Plants and Steampunks</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/cthulu.webp" alt="Box art fot Cthulul expansion">
+                        <div class="card-body">
+                            <h2>The Obligatory Cthulu Set</h2>
+                            <p>Factions:</p>
+                            <p>Elder Things, Innsmouth, Minnions of Cthulu and Miskatonic University</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="cthulu" name="acs">
+                    </div>
+        
+                    <div class="setCard card col">
+                        <img src="/assets/images/scienceFiction.webp" alt="Box art for Science Fiction Double Feature expansion">
+                        <div class="card-body">
+                            <h2>Science Fiction Double Feature</h2>
+                            <p>Factions:</p>
+                            <p>Cyborg Apes, Shapeshifters, Super Spies and Time Travelers</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="sciFi" name="acs">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="setCard card col">
+                        <img src="/assets/images/monsterSmash.webp" alt="Box art for Monster Smash expansion">
+                        <div class="card-body">
+                            <h2>Monster Smash</h2>
+                            <p>Factions:</p>
+                            <p>Giant Ants, Mad Scientists, Vampires and Werewolves</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="monsterSmash" name="acs">
+                    </div>
+            
+                    <div class="setCard card col">
+                        <img src="/assets/images/prettyPretty.webp" alt="Box art for Pretty Prety Smashup expansion">
+                        <div class="card-body">
+                            <h2>Pretty Pretty Smash Up</h2>
+                            <p>Factions:</p>
+                            <p>Fairies, Kitty Cats, Mythic Horses and Princesses</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="pretty">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/itsYourFault.webp" alt="Box art for It's Your Fault expansion">
+                        <div class="card-body">
+                            <h2>It's Your Fault</h2>
+                            <p>Factions:</p>
+                            <p>Dragons, Mythic Greeks, Sharks, Superheroes and Tornandos</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="yourFault">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/ceaseAndDesist.webp" alt="Box art for Cease and Desist expansion">
+                        <div class="card-body">
+                            <h2>Cease and Desist</h2>
+                            <p>Factions:</p>
+                            <p>Astroknights, Changerbots, Ignobles and Star Roamers</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="ceaseDesist">
+                    </div>
+                </div>
             </div>
 
-            <div class="setCard">
-            <h2>Awesome Level 9000</h2>
-            <input type="checkbox" class="sets" id="awesomeLevel9000" name="acs">
+            <div class="container">
+                <div class="row">
+                    <div class="setCard card col">
+                        <img src="/assets/images/whatWereWeThinking.webp" alt="Box art for What Were We Thinking expansion">
+                        <div class="card-body">
+                            <h2>What Were We Thinking?</h2>
+                            <p>Factions:</p>
+                            <p>Explorers, Grannies, Rock Stars and Teddy Bears</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="thinking">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/bigInJapan.webp" alt="Box art for Big in Japan expansion">
+                        <div class="card-body">
+                            <h2>Big in Japan</h2>
+                            <p>Factions:</p>
+                            <p>Itty Critters, Kaiju, Magical Girls and Mega Troopers</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="japan">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/sheep.webp" alt="Flock card from the Sheep Promotion set">
+                        <div class="card-body">
+                            <h2>Smash Up Sheep Promo</h2>
+                            <p>Factions:</p>
+                            <p>Sheep</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="sheep">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="/assets/images/allStarsEventKit.webp" alt="All Stars event kit">
+                        <div class="card-body">
+                            <h2>All Stars Event Kit</h2>
+                            <p>Factions:</p>
+                            <p>All Stars</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="allStars">
+                    </div>
+                </div>
             </div>
 
-            <div class="setCard">
-            <h2>The Obligatory Cthulu Set</h2>
-            <input type="checkbox" class="sets" id="cthulu" name="acs">
+            <div class="container">
+                <div class="row">
+                    <div class="setCard card col">
+                        <img src="/assets/images/70sExpansion.webp" alt="Box art for That 70's Expansion">
+                        <div class="card-body">
+                            <h2>That 70's Expansion</h2>
+                            <p>Factions:</p>
+                            <p>Disco Dancers, Kung Fu Fighters, Truckers and Vigilantes </p>
+                        </div>
+                    <input type="checkbox" class="sets" id="that70s">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/biggerGeekier.webp" alt="Box art for Bigger Geekier Box">
+                        <div class="card-body">
+                            <h2>The Bigger Geekier Box</h2>
+                            <p>Factions:</p>
+                            <p>Geeks and Smash Up All Stars</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="biggerGeekier">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/oopsYouDidItAgain.webp" alt="Box art for Oops, you did it again expansion">
+                        <div class="card-body">
+                            <h2>Oops You Did it Again</h2>
+                            <p>Factions:</p>
+                            <p>Ancient Egyptians, Cowboys, Samurai and Vikings</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="oopsYouDidItAgain">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/worldTour.webp" alt="Box art for World Tour expansion">
+                        <div class="card-body">
+                            <h2>Smash Up World Tour: International Incident</h2>
+                            <p>Factions:</p>
+                            <p>Luchadors, Mounties, Musketeers and Sumo Wrestlers</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="worldTour">
+                    </div>
+                </div>
             </div>
 
-            <div class="setCard">
-            <h2>Science Fiction Double Feature</h2>
-            <input type="checkbox" class="sets" id="sciFi" name="acs">
+            <div class="container">
+                <div class="row">
+                    <div class="setCard card col">
+                        <img src="assets/images/penguins.webp" alt="Art for Penguins expansion">
+                        <div class="card-body">
+                            <h2>Smash Up Penguins</h2>
+                            <p>Factions:</p>
+                            <p>Penguins</p>
+                        </div>
+                    <input type="checkbox" class="sets" id="penguins">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/marvel.webp" alt="Box art for Marvel expansion">
+                        <div class="card-body">
+                            <h2>Smash Up: Marvel</h2>
+                            <p>Factions:</p>
+                            <p>Avengers, Hydra, Kree, Masters of Evil, S.H.I.E.L.D., Sinister Six, Spider-Verse and Ultimates</p>
+                        </div>
+                        <input type="checkbox" class="sets" id="marvel">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/goblins.webp" alt="Box art for Goblin expansion">
+                        <div class="card-body">
+                            <h2>Smash Up Goblins</h2>
+                            <p>Factions:</p>
+                            <p>Goblins</p>
+                        </div>
+                        <input type="checkbox" class="sets" id="goblins">
+                    </div>
+
+                    <div class="setCard card col">
+                        <img src="assets/images/knightsOfTheRound.webp" alt="Box art for Knights of the Round Table expansion">
+                        <div class="card-body">
+                            <h2>Smash Up Knights of the Round Table</h2>
+                            <p>Factions:</p>
+                            <p>Knights of the Round Table</p>
+                        </div>
+                        <input type="checkbox" class="sets" id="knightsOfTheRoundTable">
+                    </div>
+                </div>
             </div>
 
-            <div class="setCard">
-            <h2>Monster Smash</h2>
-            <input type="checkbox" class="sets" id="monsterSmash" name="acs">
-            </div>
-
-            <div class="setCard">
-            <h2>Pretty Pretty Smash Up</h2>
-            <input type="checkbox" class="sets" id="pretty">
-            </div>
-
-            <div class="setCard">
-            <h2>It's Your Fault</h2>
-            <input type="checkbox" class="sets" id="yourFault">
-            </div>
-
-            <div class="setCard">
-            <h2>Cease and Desist</h2>
-            <input type="checkbox" class="sets" id="ceaseDesist">
-            </div>
-
-            <div class="setCard">
-            <h2>What Were We Thinking</h2>
-            <input type="checkbox" class="sets" id="thinking">
-            </div>
-
-            <div class="setCard">
-            <h2>Big in Japan</h2>
-            <input type="checkbox" class="sets" id="japan">
-            </div>
-
-            <div class="setCard">
-            <h2>Sheep</h2>
-            <input type="checkbox" class="sets" id="sheep">
-            </div>
-
-            <div class="setCard">
-            <h2>All Stars</h2>
-            <input type="checkbox" class="sets" id="allStars">
-            </div>
+          
+                
+                   
+                
+            
         </div>
 
         <div class="buttons">
-            <button class="submit" id="selectAll" onclick="selectAll()">Select All Sets</button>
-            <button class="submit" id="unselectAll" onclick="unSelectAll()">Deselect All Sets</button>
-            <button class="submit" id="submit" onclick="ifSelected()">Submit</button>
-            <button class="submit" id="reset" onclick="window.location.reload()">Reset</button>
-        </div>
+            <input type="button" class="submit" id="selectAll" onclick="selectAll()" value="Select all sets">
+            <input type="button" class="submit" id="unselectAll" onclick="unSelectAll()" value="Unselect all sets">
+            <input type="button" class="submit" id="submit" onclick="ifSelected()" value="Start Game">
+            <input type="button"class="submit" id="reset" onclick="window.location.reload()" value="Reset">
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
